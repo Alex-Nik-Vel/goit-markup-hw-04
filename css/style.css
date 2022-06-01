@@ -93,20 +93,35 @@ p {
   margin-right: 50px;
 }
 .link:hover,
-.link:focus {
+.link:focus{
   color: var(--booton-color);
 }
 .link.current {
   color: var(--booton-color);
 }
-
-/* contacts */
+.icon-hed{
+  padding: 0;
+  display: block;
+  margin-right: 10px;
+  width: 16px;
+  height: 12px;
+  fill:#da1a1a;
+  outline: red solid 1px;
+  /* background-color: aquamarine; */
+}
+.icon-hed:hover {
+  fill: var(--booton-color);
+}
+ /* contacts */
 .contacts {
   color: var(--texst-color);
 }
 .contacts:hover {
   color: var(--booton-color);
 }
+
+
+
 /* ___hero___ */
 .title {
   color: var(--title-color);
@@ -228,17 +243,17 @@ p {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 70px 70px;
-  }
-  .pecul-item:nth-child(1)::before{
-    background-image: url(../img/Vectorantena.png);
-  }
-  .pecul-item:nth-child(2)::before{
-    background-image: url(../img/VectorClock.png);
-  }
-  .diagrama::before{
-    background-image: url(../img/diagram.png);
-  }
-.astronavt::backdrop{
+}
+.pecul-item:nth-child(1)::before {
+  background-image: url(../img/Icon/Groupantena.svg);
+}
+.pecul-item:nth-child(2)::before {
+  background-image: url(../img/Icon/clock.svg);
+}
+.diagrama::before {
+  background-image: url(../img/Icon/diagram.svg);
+}
+.astronavt::before {
   background-image: url(../img/Icon/astronaut.svg);
 }
 .pecul-item {
@@ -283,8 +298,6 @@ p {
   margin-bottom: 50px;
 }
 .section-team {
-  /* margin-top: 0;
-  margin-bottom: 0; */
   padding-top: 94px;
   padding-bottom: 94px;
   background-color: #f5f4fa;
@@ -298,6 +311,7 @@ p {
 }
 .list-team {
   background-color: white;
+  border-radius: 4px;
 }
 .list-team + .list-team {
   margin-left: 30px;
@@ -311,6 +325,13 @@ p {
   line-height: 1.19;
   width: 270px;
   text-align: center;
+}
+.instag {
+  display: block;
+  width: 44px;
+  height: 44px;
+  background-color: #2196f3;
+  border-radius: 50%;
 }
 /* ____section portfolio____ */
 .portfo-section {

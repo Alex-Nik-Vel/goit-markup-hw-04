@@ -323,18 +323,15 @@ p {
   text-align: center;
 }
 .social-icons {
-  /* display: flex; */
   margin: 0;
   padding: 0;
   list-style: none;
-  /* outline: green solid 1px; */
   justify-content: space-between;
 }
 .social-icons:nth-child(n + 2) {
   padding-left: 30px;
   padding-right: 30px;
 }
-
 .socials {
   margin-bottom: 30px;
   display: flex;
@@ -342,8 +339,8 @@ p {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  /* outline: #757575 1px solid; */
-}
+  align-items: center;
+  }
 .socials:hover {
   background-color: var(--booton-color);
   fill: #ffffff;
@@ -355,7 +352,7 @@ p {
   height: 20px;
   fill: rgba(175, 177, 184, 1);
 }
-.socials > .icon-team:hover,
+.icon-team:hover,
 .icon-team:focus {
   fill: #ffffff;
 }

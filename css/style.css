@@ -104,13 +104,12 @@ p {
   display: block;
   margin-right: 10px;
   width: 16px;
-  height: 12px;
-  fill:#da1a1a;
-  outline: red solid 1px;
-  /* background-color: aquamarine; */
-}
-.icon-hed:hover {
-  fill: var(--booton-color);
+  height: 16px;
+  /* stroke:blueviolet; */
+  fill:#0fde69;
+  }
+.icon-hed:hover,.icon-hed:focus {
+  stroke: var(--booton-color);
 }
  /* contacts */
 .contacts {

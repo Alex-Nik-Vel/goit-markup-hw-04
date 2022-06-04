@@ -330,7 +330,6 @@ p {
 .social-icons {
   margin: 0;
   padding: 0;
-  /* list-style: none; */
   justify-content: space-between;
 }
 .social-icons:nth-child(n + 2) {
@@ -341,41 +340,36 @@ p {
   margin-bottom: 30px;
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
+  color: rgba(175, 177, 184, 1);
   border-radius: 50%;
-  align-items: center;
 }
-.socials:hover,.socials:focus {
+.socials:hover,
+.socials:focus {
   background-color: var(--booton-color);
-  fill: #ffffff;
-  outline: var(--booton-color);
+  color: #ffffff;
 }
-
-.icon-team {
+.social-icon {
   align-items: center;
   width: 20px;
   height: 20px;
-  fill: rgba(175, 177, 184, 1);
+  fill: currentColor;
 }
-.icon-team:hover,
-.socials>.icon-team:focus {
-  fill: #ffffff;
-  /* padding: -16px; */
-}
+
+/* ___section clients___ */
 .section-clients {
   margin-top: 94px;
   margin-bottom: 94px;
 }
-/* ___section clients___ */
-
 /* .title-client */
 .client-items {
   margin: 0;
   padding: 0;
   justify-content: space-between;
 }
-.client-list {
+.icons-client {
   display: flex;
   height: 92px;
   width: 170px;
@@ -384,14 +378,16 @@ p {
   align-items: center;
   justify-content: center;
   background-size: contain;
-  fill: #afb1b8;
+  color: #afb1b8;
 }
-.client-list:hover,
-.client-list:focus {
-  /* color: #2196f3; */
-  fill: var(--booton-color);
+.icons-client:hover,
+.icons-client:focus {
+  color: var(--booton-color);
   border: 1px solid var(--booton-color);
   cursor: pointer;
+}
+.icon-client {
+  fill: currentColor;
 }
 /* ____section portfolio____ */
 .portfo-section {
@@ -408,7 +404,8 @@ p {
   margin-right: 30px;
   margin-bottom: 30px;
 }
-.p-item:hover,.p-item:focus {
+.p-item:hover,
+.p-item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
   cursor: pointer;

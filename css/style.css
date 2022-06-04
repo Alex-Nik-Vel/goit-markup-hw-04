@@ -85,6 +85,7 @@ p {
 .nav-contact {
   display: flex;
   margin-left: auto;
+  fill: var(--texst-color);
 }
 .nav-contact .contacts:not(:last-child) {
   margin-right: 50px;
@@ -102,16 +103,18 @@ p {
   margin-right: 10px;
   width: 16px;
   height: 16px;
-  fill: var(--texst-color);
   background-size: contain;
 }
 /* contacts */
 .contacts {
   display: flex;
+  /* margin-left: 10px; */
   color: var(--texst-color);
 }
 .contacts:hover,
-.icon-hed:hover {
+.icon-hed:hover,
+.contacts:focus,
+.icon-hed:focus {
   color: var(--booton-color);
   fill: var(--booton-color);
 }
@@ -178,6 +181,7 @@ p {
   height: 50px;
   min-width: 200px;
   border-radius: 4px;
+  border: 0;
 }
 .button-hero:hover,
 .button-hero:focus {
@@ -189,7 +193,6 @@ p {
   display: flex;
   margin-top: 0;
   margin-bottom: 50px;
-  /* padding: 6px 22px; */
   justify-content: center;
 }
 .btn-portfolio .portfo-item + .portfo-item {
@@ -206,6 +209,7 @@ p {
   line-height: 1.6;
   text-align: center;
   border-radius: 4px;
+  border: 0;
 }
 .button-portfo:hover,
 .button-portfo:focus {
@@ -326,7 +330,7 @@ p {
 .social-icons {
   margin: 0;
   padding: 0;
-  list-style: none;
+  /* list-style: none; */
   justify-content: space-between;
 }
 .social-icons:nth-child(n + 2) {
@@ -342,9 +346,10 @@ p {
   border-radius: 50%;
   align-items: center;
 }
-.socials:hover {
+.socials:hover,.socials:focus {
   background-color: var(--booton-color);
   fill: #ffffff;
+  outline: var(--booton-color);
 }
 
 .icon-team {
@@ -354,8 +359,9 @@ p {
   fill: rgba(175, 177, 184, 1);
 }
 .icon-team:hover,
-.icon-team:focus {
+.socials>.icon-team:focus {
   fill: #ffffff;
+  /* padding: -16px; */
 }
 .section-clients {
   margin-top: 94px;
@@ -380,7 +386,9 @@ p {
   background-size: contain;
   fill: #afb1b8;
 }
-.client-list:hover {
+.client-list:hover,
+.client-list:focus {
+  /* color: #2196f3; */
   fill: var(--booton-color);
   border: 1px solid var(--booton-color);
   cursor: pointer;
@@ -400,7 +408,7 @@ p {
   margin-right: 30px;
   margin-bottom: 30px;
 }
-.p-item:hover {
+.p-item:hover,.p-item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
   cursor: pointer;
